@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="images/imag_1 .png" alt="Image 1" onclick="openLightbox(0)">
+        <img src="images/imag_2.png" alt="Image 2" onclick="openLightbox(1)">
+        <img src="images/imag_3.png" alt="Image 3" onclick="openLightbox(2)">
+        <img src="images/imag_4.png" alt="Image 4" onclick="openLightbox(3)">
+        <img src="images/imag_5.png" alt="Image 5" onclick="openLightbox(4)">
+        <img src="images/imag_6.png" alt="Image 6" onclick="openLightbox(5)">
+        <img src="images/imag_7.png" alt="Image 7" onclick="openLightbox(6)">
+        <img src="images/imag_8.png" alt="Image 8" onclick="openLightbox(7)">
+        <img src="images/imag_9.png" alt="Image 9" onclick="openLightbox(8)">
+        <img src="images/imag_10.png" alt="Image 10" onclick="openLightbox(9)">
+        <img src="images/imag_11.png" alt="Image 11" onclick="openLightbox(10)">
+        <img src="images/imag_12.png" alt="Image 12" onclick="openLightbox(11)">
+        <img src="images/imag_13.png" alt="Image 13" onclick="openLightbox(12)">
+        <img src="images/imag_14.png" alt="Image 14" onclick="openLightbox(13)">
+        <img src="images/imag_15.png" alt="Image 15" onclick="openLightbox(14)">
+        <img src="images/imag_16.png" alt="Image 16" onclick="openLightbox(15)">
+        <img src="images/imag_17.png" alt="Image 17" onclick="openLightbox(16)">
+        <img src="images/imag_18.png" alt="Image 18" onclick="openLightbox(17)">
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
